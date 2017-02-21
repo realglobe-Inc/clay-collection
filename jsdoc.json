@@ -1,0 +1,95 @@
+{
+  "classes": [
+    {
+      "name": "ClayCollection",
+      "description": "",
+      "extends": [
+        "Array"
+      ],
+      "access": "",
+      "virtual": false,
+      "fires": "",
+      "constructor": {
+        "name": "ClayCollection",
+        "description": "Entity collection class for ClayDB",
+        "parameters": [
+          {
+            "name": "collection",
+            "type": "Object",
+            "description": "Source collection",
+            "default": "{}",
+            "optional": true,
+            "nullable": ""
+          },
+          {
+            "name": "collection.entities",
+            "type": "Array.<ClayEntity>",
+            "description": "Entities",
+            "default": "{}",
+            "optional": true,
+            "nullable": ""
+          },
+          {
+            "name": "collection.meta",
+            "type": "ClayCollectionMeta",
+            "description": "Meta counts",
+            "default": "{}",
+            "optional": true,
+            "nullable": ""
+          }
+        ],
+        "examples": []
+      },
+      "functions": [
+        {
+          "name": "toHash",
+          "access": "",
+          "virtual": false,
+          "description": "Convert to id hash",
+          "parameters": [],
+          "examples": [],
+          "returns": {
+            "type": "Object",
+            "description": "Id base hash"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "more",
+          "access": "",
+          "virtual": false,
+          "description": "Has more or not",
+          "type": {
+            "names": [
+              "boolean"
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "functions": [
+    {
+      "name": "create",
+      "access": "",
+      "virtual": false,
+      "description": "Create a ClayCollection instance",
+      "parameters": [
+        {
+          "name": "args",
+          "type": "*",
+          "description": "",
+          "default": "",
+          "optional": "",
+          "nullable": ""
+        }
+      ],
+      "examples": [],
+      "returns": {
+        "type": "ClayCollection",
+        "description": ""
+      }
+    }
+  ]
+}
