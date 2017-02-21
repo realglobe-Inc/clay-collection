@@ -24,12 +24,13 @@ describe('clay-collection', function () {
       entities: [ { id: 3 }, { id: 4 } ],
       meta: {
         total: 5,
-        offset: 1,
+        offset: 2,
         limit: 2
       }
     })
     assert.ok(collection.more)
     assert.ok(collection.toHash())
+    assert.deepEqual(collection.page, { number: 2, size: 2 })
   }))
 })
 
