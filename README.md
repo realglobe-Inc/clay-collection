@@ -104,89 +104,55 @@ const clayCollection = require('clay-collection')
 API
 ---------
 
-# clay-id@1.0.0
+# clay-collection@1.0.0
 
-Id generator for ClayDB
+Entity collection for ClayDB
 
 + Functions
-  + [create(args)](#clay-id-function-create)
-  + [newIdString()](#clay-id-function-new-id-string)
-  + [fromJSON(value)](#clay-id-function-from-j-s-o-n)
-+ [ClayId](clay-id-classes) Class
-  + [new ClayId(id)](#clay-id-classes-clay-id-constructor)
-  + [id.is(id)](#clay-id-classes-clay-id-is)
-  + [id.toString()](#clay-id-classes-clay-id-toString)
-  + [id.toJSON()](#clay-id-classes-clay-id-toJSON)
+  + [create(args)](#clay-collection-function-create)
++ [ClayCollection](clay-collection-classes) Class
+  + [new ClayCollection(collection)](#clay-collection-classes-clay-collection-constructor)
+  + [collection.toHash()](#clay-collection-classes-clay-collection-toHash)
 
 ## Functions
 
-<a class='md-heading-link' name="clay-id-function-create" ></a>
+<a class='md-heading-link' name="clay-collection-function-create" ></a>
 
-### create(args) -> `ClayId`
+### create(args) -> `ClayCollection`
 
-Create a ClayId instance
+Create a ClayCollection instance
 
 | Param | Type | Description |
 | ----- | --- | -------- |
 | args | * |  |
 
-<a class='md-heading-link' name="clay-id-function-new-id-string" ></a>
-
-### newIdString() -> `string`
-
-Generate a new id string
-<a class='md-heading-link' name="clay-id-function-from-j-s-o-n" ></a>
-
-### fromJSON(value) -> `ClayId`
-
-Create instance from json
-
-| Param | Type | Description |
-| ----- | --- | -------- |
-| value | string,Object |  |
 
 
+<a class='md-heading-link' name="clay-collection-classes"></a>
 
-<a class='md-heading-link' name="clay-id-classes"></a>
+## ClayCollection Class
 
-## ClayId Class
-
-Id generator
+Entity collection class for ClayDB
 
 
-<a class='md-heading-link' name="clay-id-classes-clay-id-constructor" ></a>
+<a class='md-heading-link' name="clay-collection-classes-clay-collection-constructor" ></a>
 
-### new ClayId(id)
+### new ClayCollection(collection)
 
-Constructor of ClayId class
+Constructor of ClayCollection class
 
 | Param | Type | Description |
 | ----- | --- | -------- |
-| id | string |  |
+| collection | Object | Source collection |
+| collection.entities | Array.&lt;ClayEntity&gt; | Entities |
+| collection.meta | ClayCollectionMeta | Meta counts |
 
 
-<a class='md-heading-link' name="clay-id-classes-clay-id-is" ></a>
+<a class='md-heading-link' name="clay-collection-classes-clay-collection-toHash" ></a>
 
-### id.is(id) -> `boolean`
+### collection.toHash() -> `Object`
 
-Compare to another id
-
-| Param | Type | Description |
-| ----- | --- | -------- |
-| id | string,ClayId |  |
-
-
-<a class='md-heading-link' name="clay-id-classes-clay-id-toString" ></a>
-
-### id.toString() -> `string`
-
-Convert to string
-
-<a class='md-heading-link' name="clay-id-classes-clay-id-toJSON" ></a>
-
-### id.toJSON() -> `string`
-
-Convert to json (Called from JSON.stringify)
+Convert to id hash
 
 
 
