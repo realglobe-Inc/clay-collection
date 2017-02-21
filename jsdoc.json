@@ -65,6 +65,17 @@
               "boolean"
             ]
           }
+        },
+        {
+          "name": "page",
+          "access": "",
+          "virtual": false,
+          "description": "Pagination data",
+          "type": {
+            "names": [
+              "Object"
+            ]
+          }
         }
       ]
     }
