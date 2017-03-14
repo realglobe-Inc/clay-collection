@@ -6,7 +6,7 @@
   "main": "lib",
   "scripts": {
     "test": "node ./ci/test.js",
-    "prepare": "node assets.js && node ./ci/build.js && node ./ci/shim.js && node ./ci/doc.js"
+    "prepare": "node ./ci/assets.js && node ./ci/build.js && node ./ci/shim.js && node ./ci/doc.js"
   },
   "repository": "realglobe-Inc/clay-collection",
   "keywords": [
