@@ -4,7 +4,7 @@ Entity collection for ClayDB
 
 + Functions
   + [create(args)](#clay-collection-function-create)
-+ [ClayCollection](clay-collection-classes) Class
++ [`ClayCollection`](#clay-collection-classes) Class
   + [new ClayCollection(collection)](#clay-collection-classes-clay-collection-constructor)
   + [collection.toHash()](#clay-collection-classes-clay-collection-toHash)
 
@@ -24,9 +24,14 @@ Create a ClayCollection instance
 
 <a class='md-heading-link' name="clay-collection-classes"></a>
 
-## ClayCollection Class
+## `ClayCollection` Class
 
 Entity collection class for ClayDB
+
+**Extends**: 
+
++ `Array`
+
 
 
 <a class='md-heading-link' name="clay-collection-classes-clay-collection-constructor" ></a>
