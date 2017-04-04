@@ -2,13 +2,9 @@ language: node_js
 node_js:
 - '6'
 before_install:
-# TODO OSS
-# - npm i npm-cli-login -g
-# - npm-cli-login -u "${NPM_USER}" -p "${NPM_PASSWORD}" -e "${NPM_EMAIL}"
-# - npm who
-- echo "registry = https://realglobe.artifactoryonline.com/realglobe/api/npm/npm-virtual" > $HOME/.npmrc
-- curl -u${NPM_USER}:${NPM_PASSWORD} "https://realglobe.artifactoryonline.com/realglobe/api/npm/auth" >> $HOME/.npmrc
-- cat $HOME/.npmrc
+- npm i npm-cli-login -g
+- npm-cli-login -u "${NPM_USER}" -p "${NPM_PASSWORD}" -e "${NPM_EMAIL}"
+- npm who
 install:
 - npm install jsdoc -g
 - npm install
@@ -20,4 +16,4 @@ script:
 after_success:
 - ./ci/travis/publish.js
 env:
-  secure: "Fa18o3VyL+kq54tJV+teJkMZHnPfOzHf6GIRSsbbahRBmvAXDP0Lixxu2UN4fbegk99rI1xzV1CaN4rIfEqicPSoqXoM6RCWPAnFQUQ/thkfH/OGSW8+uYwmD2DosUk41iO202bB5chQ5P1q6Y9tPm3igt52+xssFOarBZpi3WCiN4tw2lk6CJDlbSJv46V0nqVuRMhR1S3hQl/nSL4+BFWmXFFJINk89clmKka+qbh0t1+lceBx381m2RqcFfgLWysVdLEyOXfij9xNm5minF0CjOCwme6LpqT1MIoXAU9K+OKoo1tWk0GZ/BJM4ByKR1VERH0xXK1AcGEZ5SEGyM12layjM4jOQLJ4QScatXVuGTjuQxh1QKDS4Ubh/o+9ddSLmms8mnKsMFR5wMz+zF2HWBFE8/Fnt87wx6a7wV9yIWMvKN/h3s144lTWWArm+lH24YeePfwrkNvDd/wyNZK1xGTVT8FVvE6pYNHx99WIE3ZaMG4Epb2qvCR7VPqIe0kbpPN10siz3ZxP6vSmVN2FFZn+SfHlP+PPmIhQAfClnKYapooZdRcN4EI1QYgA9AuXNfGfXwSOmca992IAz1KwDSlio1vGstl3ibeXM59DBwlRdii0r1YnoPuP+EJPsTubp7EK67vV39jB8fAKYvNz60OSYzZ2UyUXnO5p8fY="
+  secure: "qMc2h2z83Mtc2FbPYcj7waIcTY8XrtrOqijC5Dm3dZsrT+/+saUGv3sS1PtsmftmLBtDZUuI35+QhVBwA1vSejrWUysPAf4jVaVN8Zq8l6yPVwcuvy+KyyjFOxG0H4M5l2XSRC1KQl7bHxHMbSU7bB0UsaKMDfqfK6R3ZllfkFZMhSeMAn+pJIrsoeaGaMa9pCfoLuLyWzh039oPGIczWe7Ve02Xsd1mI2NYFda9BZebAPXeecRWBEYwRPE2sZQkKSK/Gk3Xs7Lu1abQvLWGOD4eLiyKu3vyP95b0lDLMitpisFXrRtu01xDEgnYr55VWGDZ+kkWOhmuURYtgMQJDAM118ujQQeUPwiSW4mD3gqclvPORt8R16+NQg/VZnyuY7Oat4iBMex2U/2Cwg3g2tXvY6XyPXiO6dCJrUDWYU0Dol6T0ejKC88caej8dpiqBaTUQ64kA9QsdlUmh2omH/RHFn1hJdb4vHTOSEKm+RyiD6oCmjeHJkLbXFMctW7ZutEHpJ459pP48zIXP6TaytkNODgY5bhtGa5FPJdVJj6RboM3YHLr3jaMm56a5y3/H9HVLrVXg/MykZpOZqxEXz1mhiU/AEKLG+T+CnVTV32NAsQNd2lZxpzxbcbJF6zmbwy6I+61Ucg+ZdgoEkNEZu523kWWfJbnLusLlwR9Pg4="

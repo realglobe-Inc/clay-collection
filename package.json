@@ -1,6 +1,6 @@
 {
   "name": "clay-collection",
-  "version": "1.0.3",
+  "version": "2.0.0",
   "description": "Entity collection for ClayDB",
   "browser": "shim/browser",
   "main": "lib",
@@ -23,7 +23,7 @@
   },
   "homepage": "https://github.com/realglobe-Inc/clay-collection#readme",
   "dependencies": {
-    "clay-id": "^2.0.2"
+    "clay-id": "^2.1.2"
   },
   "devDependencies": {
     "ababel": "^2.0.1",
@@ -34,19 +34,16 @@
     "ape-tasking": "^4.0.9",
     "ape-tmpl": "^5.0.20",
     "ape-updating": "^4.1.0",
-    "claydb-assets": "^1.0.2",
+    "claydb-assets": "^2.0.3",
     "co": "^4.6.0",
     "coz": "^6.0.20",
     "injectmock": "^2.0.0",
-    "sg-templates": "^1.3.2",
+    "sg-templates": "^1.4.4",
     "sugos-travis": "^2.0.7",
     "writeout": "^2.1.0"
   },
   "engines": {
     "node": ">=6",
     "npm": ">=4"
-  },
-  "publishConfig": {
-    "registry": "https://realglobe.artifactoryonline.com/realglobe/api/npm/npm-local"
   }
 }
