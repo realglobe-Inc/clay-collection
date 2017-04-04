@@ -1,12 +1,12 @@
-# clay-collection@1.0.2
+# clay-collection@2.0.0
 
 Entity collection for ClayDB
 
 + Functions
   + [create(args)](#clay-collection-function-create)
-+ [`ClayCollection`](#clay-collection-classes) Class
-  + [new ClayCollection(collection)](#clay-collection-classes-clay-collection-constructor)
-  + [collection.toHash()](#clay-collection-classes-clay-collection-toHash)
++ [`ClayCollection`](#clay-collection-class) Class
+  + [new ClayCollection(collection)](#clay-collection-class-clay-collection-constructor)
+  + [collection.toHash()](#clay-collection-class-clay-collection-toHash)
 
 ## Functions
 
@@ -22,19 +22,19 @@ Create a ClayCollection instance
 
 
 
-<a class='md-heading-link' name="clay-collection-classes"></a>
+<a class='md-heading-link' name="clay-collection-class"></a>
 
 ## `ClayCollection` Class
 
 Entity collection class for ClayDB
 
-**Extends**: 
+**Extends**:
 
 + `Array`
 
 
 
-<a class='md-heading-link' name="clay-collection-classes-clay-collection-constructor" ></a>
+<a class='md-heading-link' name="clay-collection-class-clay-collection-constructor" ></a>
 
 ### new ClayCollection(collection)
 
@@ -47,7 +47,7 @@ Constructor of ClayCollection class
 | collection.meta | ClayCollectionMeta | Meta counts |
 
 
-<a class='md-heading-link' name="clay-collection-classes-clay-collection-toHash" ></a>
+<a class='md-heading-link' name="clay-collection-class-clay-collection-toHash" ></a>
 
 ### collection.toHash() -> `Object`
 
