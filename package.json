@@ -23,7 +23,7 @@
   },
   "homepage": "https://github.com/realglobe-Inc/clay-collection#readme",
   "dependencies": {
-    "clay-id": "^2.1.2"
+    "clay-id": "^3.0.1"
   },
   "devDependencies": {
     "ababel": "^2.0.1",
