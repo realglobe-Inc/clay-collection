@@ -38,9 +38,9 @@
             "nullable": ""
           },
           {
-            "name": "collection.condition",
-            "type": "CollectionCondition",
-            "description": "Collection conditions",
+            "name": "collection.demand",
+            "type": "CollectionDemand",
+            "description": "Demanded condition",
             "default": "{}",
             "optional": true,
             "nullable": ""
