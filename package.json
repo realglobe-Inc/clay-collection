@@ -1,6 +1,6 @@
 {
   "name": "clay-collection",
-  "version": "2.1.0",
+  "version": "3.0.0",
   "description": "Entity collection for ClayDB",
   "browser": "shim/browser",
   "main": "lib",

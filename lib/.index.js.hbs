@@ -12,8 +12,7 @@ let lib = create.bind(this)
 
 Object.assign(lib, Collection, {
   create,
-  Collection,
-  ClayCollection: Collection // Fallback
+  Collection
 })
 
 module.exports = lib

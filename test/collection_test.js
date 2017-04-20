@@ -27,12 +27,14 @@ describe('clay-collection', function () {
         offset: 2,
         limit: 2
       },
-      filter: { name: 'foo' }
+      condition: {
+        filter: { name: 'foo' }
+      }
     })
     ok(collection.more)
     ok(collection.toHash())
     deepEqual(collection.page, { number: 2, size: 2 })
-    deepEqual(collection.filter, { name: 'foo' })
+    deepEqual(collection.condition.filter, { name: 'foo' })
   }))
 })
 
