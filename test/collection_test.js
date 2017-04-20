@@ -4,8 +4,8 @@
  */
 'use strict'
 
-const ClayCollection = require('../lib/clay_collection.js')
-const assert = require('assert')
+const Collection = require('../lib/collection.js')
+const { ok, deepEqual } = require('assert')
 const co = require('co')
 
 describe('clay-collection', function () {
@@ -20,17 +20,19 @@ describe('clay-collection', function () {
   }))
 
   it('Clay collection', () => co(function * () {
-    let collection = new ClayCollection({
+    let collection = new Collection({
       entities: [ { id: 'foo' }, { id: 'bar' } ],
       meta: {
         total: 5,
         offset: 2,
         limit: 2
-      }
+      },
+      filter: { name: 'foo' }
     })
-    assert.ok(collection.more)
-    assert.ok(collection.toHash())
-    assert.deepEqual(collection.page, { number: 2, size: 2 })
+    ok(collection.more)
+    ok(collection.toHash())
+    deepEqual(collection.page, { number: 2, size: 2 })
+    deepEqual(collection.filter, { name: 'foo' })
   }))
 })
 

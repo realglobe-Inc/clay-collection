@@ -1,7 +1,7 @@
 {
   "classes": [
     {
-      "name": "ClayCollection",
+      "name": "Collection",
       "description": "",
       "extends": [
         "Array"
@@ -10,7 +10,7 @@
       "virtual": false,
       "fires": "",
       "constructor": {
-        "name": "ClayCollection",
+        "name": "Collection",
         "description": "Entity collection class for ClayDB",
         "parameters": [
           {
@@ -23,7 +23,7 @@
           },
           {
             "name": "collection.entities",
-            "type": "Array.<ClayEntity>",
+            "type": "Array.<Entity>",
             "description": "Entities",
             "default": "{}",
             "optional": true,
@@ -31,8 +31,16 @@
           },
           {
             "name": "collection.meta",
-            "type": "ClayCollectionMeta",
+            "type": "CollectionMeta",
             "description": "Meta counts",
+            "default": "{}",
+            "optional": true,
+            "nullable": ""
+          },
+          {
+            "name": "collection.condition",
+            "type": "CollectionCondition",
+            "description": "Collection conditions",
             "default": "{}",
             "optional": true,
             "nullable": ""
@@ -85,7 +93,7 @@
       "name": "create",
       "access": "",
       "virtual": false,
-      "description": "Create a ClayCollection instance",
+      "description": "Create a Collection instance",
       "parameters": [
         {
           "name": "args",
@@ -98,7 +106,7 @@
       ],
       "examples": [],
       "returns": {
-        "type": "ClayCollection",
+        "type": "Collection",
         "description": ""
       }
     }
