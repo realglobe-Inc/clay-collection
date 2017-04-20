@@ -13,7 +13,8 @@ const clayCollection = require('clay-collection')
       total: 100,
       offset: 0,
       limit: 2
-    }
+    },
+    filter: { foo: 'bar' }
   })
   /* ... */
 }
