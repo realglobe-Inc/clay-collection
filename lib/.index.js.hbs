@@ -6,13 +6,13 @@
 'use strict'
 
 const create = require('./create')
-const ClayCollection = require('./clay_collection')
+const Collection = require('./collection')
 
 let lib = create.bind(this)
 
-Object.assign(lib, ClayCollection, {
+Object.assign(lib, Collection, {
   create,
-  ClayCollection
+  Collection
 })
 
 module.exports = lib
