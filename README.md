@@ -108,7 +108,7 @@ const clayCollection = require('clay-collection')
 API
 ---------
 
-# clay-collection@3.0.0
+# clay-collection@3.0.1
 
 Entity collection for ClayDB
 
