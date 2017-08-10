@@ -109,6 +109,27 @@
         "type": "Collection",
         "description": ""
       }
+    },
+    {
+      "name": "isCollection",
+      "access": "",
+      "virtual": false,
+      "description": "Detect a instance is collection or not",
+      "parameters": [
+        {
+          "name": "obj",
+          "type": "*",
+          "description": "Object to check",
+          "default": "",
+          "optional": "",
+          "nullable": ""
+        }
+      ],
+      "examples": [],
+      "returns": {
+        "type": "boolean",
+        "description": "is collection or not"
+      }
     }
   ]
 }
