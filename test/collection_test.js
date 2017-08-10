@@ -20,7 +20,7 @@ describe('clay-collection', function () {
   }))
 
   it('Clay collection', () => co(function * () {
-    let collection = new Collection({
+    const collection = new Collection({
       entities: [ { id: 'foo' }, { id: 'bar' } ],
       meta: {
         total: 5,
