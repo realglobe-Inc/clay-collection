@@ -1,4 +1,4 @@
-# clay-collection@3.1.1
+# clay-collection@3.1.2
 
 Entity collection for ClayDB
 
